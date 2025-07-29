@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; }
+        .container { max-width: 400px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 8px #ccc; }
+        .label { font-weight: bold; margin-top: 15px; display: block; }
+        .value { margin-bottom: 10px; }
+        a { color: #007bff; text-decoration: none; margin-top: 20px; display: inline-block; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Details</h2>
+        <div>
+            <span class="label">ID:</span>
+            <span class="value" th:text="${user.id}"></span>
+
+            <span class="label">Name:</span>
+            <span class="value" th:text="${user.name}"></span>
+
+            <span class="label">Email:</span>
+            <span class="value" th:text="${user.email}"></span>
+
+            <span class="label">Student ID:</span>
+            <span class="value" th:text="${user.studentId}"></span>
+
+            <span class="label">Phone:</span>
+            <span class="value" th:text="${user.phone}"></span>
+
+            <span class="label">Address:</span>
+            <span class="value" th:text="${user.address}"></span>
+        </div>
+        <a href="/users">Back to List</a>
+    </div>
+</body>
+</html>
