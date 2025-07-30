@@ -40,9 +40,9 @@ A simple web application demonstrating CRUD (Create, Read, Update, Delete) opera
    Create a PostgreSQL database (e.g., `formdb`).  
    Update your `src/main/resources/application.properties`:
    ```properties
-   spring.datasource.url=jdbc:postgresql://localhost:5432/formdb
+   spring.datasource.url=jdbc:postgresql://localhost:3001/intern_demo
    spring.datasource.username=your_db_username
-   spring.datasource.password=your_db_password
+   spring.datasource.password=your_db_passwor
    spring.jpa.hibernate.ddl-auto=update
    ```
 
